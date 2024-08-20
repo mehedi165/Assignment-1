@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>html from all input</title>
+    <style>
+        body {
+            background-color: #E6E6FA;
+        }
+
+        h1 {
+            font-size: 30px;
+            color: red;
+        }
+
+        .text {
+            width: 20%;
+            padding: 10px 16px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .technology {
+            width: 12%;
+            padding: 5px 10px;
+            margin: 5px 0;
+            display: inline-block;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .head {
+            width: 12%;
+        }
+
+        .address {
+            width: 20%;
+            padding: 10px 16px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>This is an html file and contains all the inpus</h1>
+    <from>
+        <label for="first-name">First Name</label><br>
+        <input type="text" id="first-name">
+        <br><br>
+
+        <label for="last-name">Last Name</label><br>
+        <input type="text" id="last-name">
+        <br><br>
+
+        <label for="number">Mobile</label><br>
+        <input type="number" id="number">
+        <br><br>
+
+        <label for="number">Emergency Contact</label><br>
+        <input type="number" id="number">
+        <br><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" id="password">
+        <br><br>
+
+        <label for="email-address">Email Address</label><br>
+        <input type="email" id="email-address">
+        <br><br>
+
+        <label for="district-select">Home district</label><br>
+        <select name="district" id="district-select">
+            <option value="">Home district</option>
+            <option value="rangpur">Rangpur</option>
+            <option value="lalmonirhat">Lalmonirhat</option>
+            <option value="kurigram">Kurigram</option>
+            <option value="nilphamari">Nilphamari</option>
+            <option value="thakurgown">Thakurgown</option>
+            <option value="gaibandha">Gaibandha</option>
+        </select>
+        <br><br>
+        <div>
+            <label for="text">Institute Name</label><br>
+            <input type="text" id="text" class="text">
+        </div>
+        <br><br>
+
+        <div>
+            <label for="text">Study In (Diploma Engineering)</label><br>
+            <input type="text" id="text" class="text">
+        </div>
+        <br>
+        <div>
+            <label for="technology-select">Technology</label><br>
+            <select name="technology" id="technology-select" class="technology">
+                <option value="">Technology</option>
+                <option value="computer">Computer</option>
+                <option value="power">Power</option>
+                <option value="electrical">Electrical</option>
+                <option value="electroics">Electroics</option>
+                <option value="civil">Civil</option>
+                <option value="electromedical">Electromedical</option>
+            </select>
+        </div>
+        <br><br>
+
+        <label for="text">Semester (8th)</label><br>
+        <input type="text" id="text">
+        <br><br>
+        <div>
+            <label for="shift-select">Shift</label><br>
+            <select name="shift" id="shift-select" class="technology">
+                <option value="shift">Shift</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="address">Present Address</label><br>
+            <input type="address" id="address" class="address">
+            <br><br>
+
+            <label for="address">Permanent Address</label><br>
+            <input type="address" id="address" class="address">
+        </div>
+        <br><br>
+
+        <label for="textarea">Comment</label> <br>
+        <textarea id="textarea" name="example" rows="4" cols="50">
+            Text area
+        </textarea>
+        <br><br>
+
+        <label for="url">Enter an https:// URL:</label><br>
+        <input type="url" id="url" placeholder="https://banglafighter.com">
+        <br><br>
+
+        <label for="appt">Choose a time for your meeting:</label> <br>
+        <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+        <br><br>
+
+        <label for="camp-week">Choose a week in May or June:</label> <br>
+        <input type="week" name="week" id="camp-week" min="2018-W01" max="2030-W30" required>
+        <br><br>
+
+        <input type="search" id="site-search" name="q">
+        <button>Search</button>
+        <br><br>
+        <label for="month-only">Start month:</label> <br>
+        <input type="month" id="month-only" name="start" min="2018-03" value="2018-05">
+        <br><br>
+
+        <label for="tentacles">Number of tentacles (10-100):</label> <br>
+        <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+        <br><br>
+
+        <label for="meeting-time">Choose a time for your appointment:</label> <br>
+        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+            min="2018-06-07T00:00" max="2018-06-14T00:00">
+        <br><br>
+
+        <label for="start">Start date:</label> <br>
+        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        <br><br>
+
+        <label for="volume">Volume</label> <br>
+        <input type="range" id="volume" name="volume" min="0" max="100">
+        <br><br>
+
+        <input type="radio" id="huey" name="drone" value="huey">
+        <label for="huey">Huey</label> <br>
+        <input type="radio" id="dewey" name="drone" value="dewey">
+        <label for="dewey">Dewey</label>
+        <br><br>
+
+        <input type="checkbox" id="scales" name="scales">
+        <label for="scales">Scales</label> <br>
+        <input type="checkbox" id="horns" name="horns" checked>
+        <label for="horns">Horns</label>
+        <br><br>
+        <div>
+            <label for="head">Color</label> <br>
+            <input type="color" id="head" name="head" class="head" value="#e66465">
+        </div>
+        <br>
+
+        <label for="cv">Upload CV</label><br>
+        <input type="file" id="cv" name="cv">
+        <br><br>
+
+        <input class="favorite styled" type="button" value="Add to favorites">
+        <br><br>
+
+        <input type="reset" value="Reset">
+        <br><br>
+
+        <input type="submit" value="Save">
+    </from>
+</body>
+
+</html>
